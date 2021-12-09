@@ -10,16 +10,16 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Ui\DataProvider\Form\Rma;
+namespace Tmo\SimpleReturns\Ui\DataProvider\Form\Rma;
 
 use Countable;
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Component\Ui\DataProvider\Modifier\ModifierPoolTrait,
     Model\ResourceModel\SimpleReturn as SimpleReturnResource,
     Model\ResourceModel\SimpleReturn\Collection,

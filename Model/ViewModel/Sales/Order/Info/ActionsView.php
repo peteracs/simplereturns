@@ -10,23 +10,22 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Model\ViewModel\Sales\Order\Info;
+namespace Tmo\SimpleReturns\Model\ViewModel\Sales\Order\Info;
 
-use AuroraExtensions\SimpleReturns\{
-    Api\Data\SimpleReturnInterface,
+use Tmo\SimpleReturns\{Api\Data\SimpleReturnInterface,
     Api\SimpleReturnRepositoryInterface,
+    Component\Http\Url\CreateUrls,
     Exception\ExceptionFactory,
     Helper\Config as ConfigHelper,
     Model\ValidatorModel\Sales\Order\EligibilityValidator,
     Model\ViewModel\AbstractView,
-    Shared\ModuleComponentInterface
-};
+    Shared\ModuleComponentInterface};
 use Magento\Framework\{
     App\RequestInterface,
     Exception\NoSuchEntityException,
@@ -39,6 +38,8 @@ class ActionsView extends AbstractView implements
     ArgumentInterface,
     ModuleComponentInterface
 {
+    use CreateUrls;
+
     /** @property SimpleReturnRepositoryInterface $simpleReturnRepository */
     protected $simpleReturnRepository;
 
@@ -110,22 +111,6 @@ class ActionsView extends AbstractView implements
         }
 
         return false;
-    }
-
-    /**
-     * @param OrderInterface $order
-     * @return string
-     */
-    public function getRmaCreateUrl(OrderInterface $order): string
-    {
-        return $this->urlBuilder->getUrl(
-            'simplereturns/rma/create',
-            [
-                'order_id' => $order->getRealOrderId(),
-                'code'     => $order->getProtectCode(),
-                '_secure'  => true,
-            ]
-        );
     }
 
     /**

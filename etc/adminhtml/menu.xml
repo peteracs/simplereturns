@@ -11,41 +11,41 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="AuroraExtensions_SimpleReturns::rma"
+        <add id="Tmo_SimpleReturns::rma"
              title="Simple Returns"
              translate="title"
-             module="AuroraExtensions_SimpleReturns"
-             resource="AuroraExtensions_SimpleReturns::rma"
+             module="Tmo_SimpleReturns"
+             resource="Tmo_SimpleReturns::rma"
              sortOrder="18"/>
-        <add id="AuroraExtensions_SimpleReturns::rma_operation"
+        <add id="Tmo_SimpleReturns::rma_operation"
              title="Management"
              translate="title"
-             module="AuroraExtensions_SimpleReturns"
-             parent="AuroraExtensions_SimpleReturns::rma"
-             resource="AuroraExtensions_SimpleReturns::rma_operation"
+             module="Tmo_SimpleReturns"
+             parent="Tmo_SimpleReturns::rma"
+             resource="Tmo_SimpleReturns::rma_operation"
              sortOrder="10"/>
-        <add id="AuroraExtensions_SimpleReturns::rma_request"
+        <add id="Tmo_SimpleReturns::rma_request"
              title="RMAs"
              translate="title"
-             module="AuroraExtensions_SimpleReturns"
+             module="Tmo_SimpleReturns"
              sortOrder="10"
-             parent="AuroraExtensions_SimpleReturns::rma_operation"
-             resource="AuroraExtensions_SimpleReturns::rma_request"
+             parent="Tmo_SimpleReturns::rma_operation"
+             resource="Tmo_SimpleReturns::rma_request"
              action="simplereturns/rma/index"/>
-        <add id="AuroraExtensions_SimpleReturns::rma_package"
+        <add id="Tmo_SimpleReturns::rma_package"
              title="Packages"
              translate="title"
-             module="AuroraExtensions_SimpleReturns"
+             module="Tmo_SimpleReturns"
              sortOrder="20"
-             parent="AuroraExtensions_SimpleReturns::rma_operation"
-             resource="AuroraExtensions_SimpleReturns::rma_package"
+             parent="Tmo_SimpleReturns::rma_operation"
+             resource="Tmo_SimpleReturns::rma_package"
              action="simplereturns/package/index"/>
     </menu>
 </config>

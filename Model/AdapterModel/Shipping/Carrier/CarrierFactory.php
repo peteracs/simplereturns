@@ -15,15 +15,15 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Model\AdapterModel\Shipping\Carrier;
+namespace Tmo\SimpleReturns\Model\AdapterModel\Shipping\Carrier;
 
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Component\System\ModuleConfigTrait,
     Exception\ExceptionFactory,
     Exception\InvalidCarrierException,

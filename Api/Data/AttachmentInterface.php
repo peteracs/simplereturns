@@ -10,13 +10,13 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package        AuroraExtensions_SimpleReturns
+ * @package        Tmo_SimpleReturns
  * @copyright      Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license        MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Api\Data;
+namespace Tmo\SimpleReturns\Api\Data;
 
 interface AttachmentInterface
 {
@@ -27,7 +27,7 @@ interface AttachmentInterface
 
     /**
      * @param int $id
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setId($id);
 
@@ -38,7 +38,7 @@ interface AttachmentInterface
 
     /**
      * @param string $createdAt
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -49,7 +49,7 @@ interface AttachmentInterface
 
     /**
      * @param int $rmaId
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setRmaId(int $rmaId): AttachmentInterface;
 
@@ -60,7 +60,7 @@ interface AttachmentInterface
 
     /**
      * @param string $filename
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setFilename(string $filename): AttachmentInterface;
 
@@ -71,7 +71,7 @@ interface AttachmentInterface
 
     /**
      * @param int $filesize
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setFilesize(int $filesize): AttachmentInterface;
 
@@ -82,7 +82,7 @@ interface AttachmentInterface
 
     /**
      * @param string $filePath
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setFilePath(string $filePath): AttachmentInterface;
 
@@ -93,7 +93,7 @@ interface AttachmentInterface
 
     /**
      * @param string $mimeType
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setMimeType(string $mimeType): AttachmentInterface;
 
@@ -104,7 +104,7 @@ interface AttachmentInterface
 
     /**
      * @param string $filePath
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setThumbnail(string $filePath): AttachmentInterface;
 
@@ -115,7 +115,7 @@ interface AttachmentInterface
 
     /**
      * @param string $token
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface
+     * @return \Tmo\SimpleReturns\Api\Data\AttachmentInterface
      */
     public function setToken(string $token): AttachmentInterface;
 }

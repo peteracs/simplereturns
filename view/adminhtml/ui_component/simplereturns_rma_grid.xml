@@ -11,7 +11,7 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -29,7 +29,7 @@
                 <url path="simplereturns/rma/order_index"/>
                 <class>primary</class>
                 <label translate="true">Create RMA</label>
-                <aclResource>AuroraExtensions_SimpleReturns::create</aclResource>
+                <aclResource>Tmo_SimpleReturns::create</aclResource>
             </button>
         </buttons>
         <spinner>simplereturns_rma_grid_columns</spinner>
@@ -41,8 +41,8 @@
         <settings>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>AuroraExtensions_SimpleReturns::rma_request</aclResource>
-        <dataProvider class="AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Rma\DataProvider"
+        <aclResource>Tmo_SimpleReturns::rma_request</aclResource>
+        <dataProvider class="Tmo\SimpleReturns\Ui\DataProvider\Grid\Rma\DataProvider"
                       name="simplereturns_rma_grid_data_source">
             <settings>
                 <primaryFieldName>rma_id</primaryFieldName>
@@ -75,7 +75,7 @@
             </settings>
         </column>
         <column name="increment_id"
-                class="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Order\IncrementId"
+                class="Tmo\SimpleReturns\Ui\Component\Listing\Column\Order\IncrementId"
                 sortOrder="300">
             <settings>
                 <filter>text</filter>
@@ -123,7 +123,7 @@
             </settings>
         </column>
         <actionsColumn name="actions"
-                       class="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Rma\Actions"
+                       class="Tmo\SimpleReturns\Ui\Component\Listing\Column\Rma\Actions"
                        sortOrder="900">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

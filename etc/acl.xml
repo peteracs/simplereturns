@@ -11,7 +11,7 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -20,23 +20,23 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="AuroraExtensions_SimpleReturns::rma" title="RMA" translate="title" sortOrder="10">
-                    <resource id="AuroraExtensions_SimpleReturns::rma_operation" title="Operations" translate="title" sortOrder="10">
-                        <resource id="AuroraExtensions_SimpleReturns::rma_request" title="Returns" translate="title" sortOrder="10">
-                            <resource id="AuroraExtensions_SimpleReturns::actions" title="Actions" translate="title" sortOrder="10">
-                                <resource id="AuroraExtensions_SimpleReturns::create" title="Create" translate="title" sortOrder="10"/>
-                                <resource id="AuroraExtensions_SimpleReturns::view" title="View" translate="title" sortOrder="20"/>
-                                <resource id="AuroraExtensions_SimpleReturns::edit" title="Edit" translate="title" sortOrder="30"/>
-                                <resource id="AuroraExtensions_SimpleReturns::delete" title="Delete" translate="title" sortOrder="40"/>
+                <resource id="Tmo_SimpleReturns::rma" title="RMA" translate="title" sortOrder="10">
+                    <resource id="Tmo_SimpleReturns::rma_operation" title="Operations" translate="title" sortOrder="10">
+                        <resource id="Tmo_SimpleReturns::rma_request" title="Returns" translate="title" sortOrder="10">
+                            <resource id="Tmo_SimpleReturns::actions" title="Actions" translate="title" sortOrder="10">
+                                <resource id="Tmo_SimpleReturns::create" title="Create" translate="title" sortOrder="10"/>
+                                <resource id="Tmo_SimpleReturns::view" title="View" translate="title" sortOrder="20"/>
+                                <resource id="Tmo_SimpleReturns::edit" title="Edit" translate="title" sortOrder="30"/>
+                                <resource id="Tmo_SimpleReturns::delete" title="Delete" translate="title" sortOrder="40"/>
                             </resource>
                         </resource>
-                        <resource id="AuroraExtensions_SimpleReturns::rma_package" title="Packages" translate="title" sortOrder="20"/>
+                        <resource id="Tmo_SimpleReturns::rma_package" title="Packages" translate="title" sortOrder="20"/>
                     </resource>
                 </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="AuroraExtensions_SimpleReturns::configuration" title="Simple Returns"/>
+                            <resource id="Tmo_SimpleReturns::configuration" title="Simple Returns"/>
                         </resource>
                     </resource>
                 </resource>

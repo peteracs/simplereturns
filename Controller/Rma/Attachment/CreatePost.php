@@ -10,17 +10,17 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Controller\Rma\Attachment;
+namespace Tmo\SimpleReturns\Controller\Rma\Attachment;
 
 use Exception;
 use AuroraExtensions\ImageProcessor\Api\ImageManagementInterface;
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Api\Data\AttachmentInterface,
     Api\Data\AttachmentInterfaceFactory,
     Api\Data\SimpleReturnInterface,
@@ -55,7 +55,7 @@ class CreatePost extends Action implements
     HttpPostActionInterface,
     ModuleComponentInterface
 {
-    /** @see AuroraExtensions\SimpleReturns\Shared\Action\Redirector */
+    /** @see Tmo\SimpleReturns\Shared\Action\Redirector */
     use Redirector {
         Redirector::__initialize as protected;
     }

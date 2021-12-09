@@ -11,7 +11,7 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -27,8 +27,8 @@
     </argument>
     <settings>
         <buttons>
-            <button name="save" class="AuroraExtensions\SimpleReturns\Ui\Component\Control\Package\SaveButton"/>
-            <button name="cancel" class="AuroraExtensions\SimpleReturns\Ui\Component\Control\Package\CancelButton"/>
+            <button name="save" class="Tmo\SimpleReturns\Ui\Component\Control\Package\SaveButton"/>
+            <button name="cancel" class="Tmo\SimpleReturns\Ui\Component\Control\Package\CancelButton"/>
         </buttons>
         <ajaxSave>true</ajaxSave>
         <ajaxSaveType>simple</ajaxSaveType>
@@ -45,7 +45,7 @@
             </filterUrlParams>
             <submitUrl path="simplereturns/package/:action"/>
         </settings>
-        <dataProvider class="AuroraExtensions\SimpleReturns\Ui\DataProvider\Form\Package\DataProvider" name="simplereturns_pkg_form_data_source">
+        <dataProvider class="Tmo\SimpleReturns\Ui\DataProvider\Form\Package\DataProvider" name="simplereturns_pkg_form_data_source">
             <settings>
                 <primaryFieldName>pkg_id</primaryFieldName>
                 <requestFieldName>pkg_id</requestFieldName>
@@ -60,7 +60,7 @@
         </argument>
         <block class="Magento\Framework\View\Element\Template"
                name="simplereturns_pkg_form_before"
-               template="AuroraExtensions_SimpleReturns::container/empty.phtml"/>
+               template="Tmo_SimpleReturns::container/empty.phtml"/>
     </htmlContent>
     <fieldset name="simplereturns">
         <settings>
@@ -109,7 +109,7 @@
         </argument>
         <block class="Magento\Framework\View\Element\Template"
                name="simplereturns_pkg_form_info"
-               template="AuroraExtensions_SimpleReturns::package/form/info.phtml"/>
+               template="Tmo_SimpleReturns::package/form/info.phtml"/>
     </htmlContent>
     <htmlContent name="simplereturns_pkg_form_after_html_content">
         <argument name="data" xsi:type="array">
@@ -119,6 +119,6 @@
         </argument>
         <block class="Magento\Framework\View\Element\Template"
                name="simplereturns_pkg_form_after"
-               template="AuroraExtensions_SimpleReturns::container/empty.phtml"/>
+               template="Tmo_SimpleReturns::container/empty.phtml"/>
     </htmlContent>
 </form>

@@ -10,15 +10,15 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Controller\Adminhtml\Rma\Order;
+namespace Tmo\SimpleReturns\Controller\Adminhtml\Rma\Order;
 
-use AuroraExtensions\SimpleReturns\Shared\ModuleComponentInterface;
+use Tmo\SimpleReturns\Shared\ModuleComponentInterface;
 use Magento\Backend\{
     App\Action,
     App\Action\Context
@@ -34,7 +34,7 @@ class Index extends Action implements
     ModuleComponentInterface
 {
     /** @constant string ADMIN_RESOURCE */
-    public const ADMIN_RESOURCE = 'AuroraExtensions_SimpleReturns::rma';
+    public const ADMIN_RESOURCE = 'Tmo_SimpleReturns::rma';
 
     /** @property PageFactory $resultPageFactory */
     protected $resultPageFactory;

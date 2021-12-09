@@ -10,13 +10,13 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
-namespace AuroraExtensions\SimpleReturns\Shared\Action;
+namespace Tmo\SimpleReturns\Shared\Action;
 
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Exception\TraitContextException,
     Shared\ModuleComponentInterface
 };

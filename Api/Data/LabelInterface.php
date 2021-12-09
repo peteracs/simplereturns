@@ -10,13 +10,13 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package        AuroraExtensions_SimpleReturns
+ * @package        Tmo_SimpleReturns
  * @copyright      Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license        MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Api\Data;
+namespace Tmo\SimpleReturns\Api\Data;
 
 interface LabelInterface
 {
@@ -27,7 +27,7 @@ interface LabelInterface
 
     /**
      * @param int $id
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\LabelInterface
+     * @return \Tmo\SimpleReturns\Api\Data\LabelInterface
      */
     public function setId($id);
 
@@ -38,7 +38,7 @@ interface LabelInterface
 
     /**
      * @param string $createdAt
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\LabelInterface
+     * @return \Tmo\SimpleReturns\Api\Data\LabelInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -49,7 +49,7 @@ interface LabelInterface
 
     /**
      * @param string|null $image
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\LabelInterface
+     * @return \Tmo\SimpleReturns\Api\Data\LabelInterface
      */
     public function setImage(?string $image): LabelInterface;
 
@@ -60,7 +60,7 @@ interface LabelInterface
 
     /**
      * @param string $trackingNumber
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\LabelInterface
+     * @return \Tmo\SimpleReturns\Api\Data\LabelInterface
      */
     public function setTrackingNumber(string $trackingNumber): LabelInterface;
 }

@@ -11,7 +11,7 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -29,7 +29,7 @@
                 <url path="simplereturns/package/rma_index"/>
                 <class>primary</class>
                 <label translate="true">Create Package</label>
-                <aclResource>AuroraExtensions_SimpleReturns::rma_package</aclResource>
+                <aclResource>Tmo_SimpleReturns::rma_package</aclResource>
             </button>
         </buttons>
         <spinner>simplereturns_pkg_grid_columns</spinner>
@@ -41,8 +41,8 @@
         <settings>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>AuroraExtensions_SimpleReturns::rma_request</aclResource>
-        <dataProvider class="AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Package\DataProvider"
+        <aclResource>Tmo_SimpleReturns::rma_request</aclResource>
+        <dataProvider class="Tmo\SimpleReturns\Ui\DataProvider\Grid\Package\DataProvider"
                       name="simplereturns_pkg_grid_data_source">
             <settings>
                 <primaryFieldName>pkg_id</primaryFieldName>
@@ -75,7 +75,7 @@
             </settings>
         </column>
         <column name="rma_id"
-                class="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Rma\IncrementId"
+                class="Tmo\SimpleReturns\Ui\Component\Listing\Column\Rma\IncrementId"
                 sortOrder="300">
             <settings>
                 <filter>text</filter>
@@ -116,7 +116,7 @@
             </settings>
         </column>
         <actionsColumn name="actions"
-                       class="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Package\Actions"
+                       class="Tmo\SimpleReturns\Ui\Component\Listing\Column\Package\Actions"
                        sortOrder="800">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

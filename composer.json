@@ -1,17 +1,8 @@
 {
-  "name": "auroraextensions/simplereturns",
-  "description": "Simplified RMA for Magento Open Source.",
+  "name": "tmo/rma",
+  "version": "1.0.0",
+  "description": "N/A",
   "type": "magento2-module",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Nickolas Burr",
-      "email": "nickolasburr@auroraextensions.com"
-    }
-  ],
-  "support": {
-    "email": "support@auroraextensions.com"
-  },
   "require": {
     "php": "~7.2.0||~7.3.0||~7.4.0",
     "ext-gd": "*",
@@ -27,12 +18,13 @@
     "auroraextensions/modulecomponents": "~100.0.0||~100.1.0",
     "auroraextensions/imageprocessor": "~1.0"
   },
+  "license": "MIT",
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "AuroraExtensions\\SimpleReturns\\": ""
+      "Tmo\\Rma\\": ""
     }
   }
 }

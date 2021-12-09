@@ -9,16 +9,16 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 define([
     'jquery',
     'dropzone',
-    'AuroraExtensions_SimpleReturns/js/url/builder',
-    'AuroraExtensions_SimpleReturns/js/url/parser',
-    'AuroraExtensions_SimpleReturns/js/utils/dataTypes'
+    'Tmo_SimpleReturns/js/url/builder',
+    'Tmo_SimpleReturns/js/url/parser',
+    'Tmo_SimpleReturns/js/utils/dataTypes'
 ], function ($, Dropzone, urlBuilder, urlParser, dataTypes) {
     'use strict';
 

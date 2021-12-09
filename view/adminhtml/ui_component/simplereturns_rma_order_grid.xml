@@ -11,7 +11,7 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -197,7 +197,7 @@
                 <visible>false</visible>
             </settings>
         </column>
-        <actionsColumn name="actions" class="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Order">
+        <actionsColumn name="actions" class="Tmo\SimpleReturns\Ui\Component\Listing\Column\Order">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="actionPath" xsi:type="string">simplereturns/rma/create</item>

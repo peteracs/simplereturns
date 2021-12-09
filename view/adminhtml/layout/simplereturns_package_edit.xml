@@ -11,14 +11,14 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="AuroraExtensions_SimpleReturns::css/simplereturns.css"/>
+        <css src="Tmo_SimpleReturns::css/simplereturns.css"/>
     </head>
     <body>
         <referenceContainer name="content">
@@ -26,7 +26,7 @@
         </referenceContainer>
         <referenceBlock name="simplereturns_pkg_form_info">
             <arguments>
-                <argument name="view_model" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ViewModel\Package\Form\InfoView</argument>
+                <argument name="view_model" xsi:type="object">Tmo\SimpleReturns\Model\ViewModel\Package\Form\InfoView</argument>
             </arguments>
         </referenceBlock>
     </body>

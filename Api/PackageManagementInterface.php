@@ -10,15 +10,15 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package        AuroraExtensions_SimpleReturns
+ * @package        Tmo_SimpleReturns
  * @copyright      Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license        MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Api;
+namespace Tmo\SimpleReturns\Api;
 
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Api\Data\LabelInterface,
     Api\Data\PackageInterface
 };
@@ -26,8 +26,8 @@ use AuroraExtensions\SimpleReturns\{
 interface PackageManagementInterface
 {
     /**
-     * @param \AuroraExtensions\SimpleReturns\Api\Data\PackageInterface $package
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\LabelInterface|null
+     * @param \Tmo\SimpleReturns\Api\Data\PackageInterface $package
+     * @return \Tmo\SimpleReturns\Api\Data\LabelInterface|null
      */
     public function createShipmentPackages(PackageInterface $package): array;
 }

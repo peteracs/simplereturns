@@ -11,43 +11,43 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="AuroraExtensions_SimpleReturns::css/simplereturns.css"/>
+        <css src="Tmo_SimpleReturns::css/simplereturns.css"/>
     </head>
     <body>
         <referenceBlock name="page.actions.toolbar">
-            <block class="AuroraExtensions\SimpleReturns\Block\Adminhtml\Rma\Edit" name="simplereturns_rma_edit_button"/>
-            <block class="AuroraExtensions\SimpleReturns\Block\Adminhtml\Rma\Status\Actions" name="simplereturns_rma_status_action_buttons"/>
+            <block class="Tmo\SimpleReturns\Block\Adminhtml\Rma\Edit" name="simplereturns_rma_edit_button"/>
+            <block class="Tmo\SimpleReturns\Block\Adminhtml\Rma\Status\Actions" name="simplereturns_rma_status_action_buttons"/>
         </referenceBlock>
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template"
                    name="simplereturns_rma_view"
-                   template="AuroraExtensions_SimpleReturns::container/empty.phtml">
+                   template="Tmo_SimpleReturns::container/empty.phtml">
                 <block class="Magento\Framework\View\Element\Template"
                        name="simplereturns_rma_view_details"
-                       template="AuroraExtensions_SimpleReturns::rma/view/details.phtml">
+                       template="Tmo_SimpleReturns::rma/view/details.phtml">
                     <arguments>
-                        <argument name="view_model" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
+                        <argument name="view_model" xsi:type="object">Tmo\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
                     </arguments>
                 </block>
                 <block class="Magento\Framework\View\Element\Template"
                        name="simplereturns_rma_view_media"
-                       template="AuroraExtensions_SimpleReturns::rma/view/media.phtml">
+                       template="Tmo_SimpleReturns::rma/view/media.phtml">
                     <arguments>
-                        <argument name="view_model" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
+                        <argument name="view_model" xsi:type="object">Tmo\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
                     </arguments>
                 </block>
                 <block class="Magento\Framework\View\Element\Template"
                        name="simplereturns_rma_view_customer_info"
-                       template="AuroraExtensions_SimpleReturns::rma/view/customer.phtml">
+                       template="Tmo_SimpleReturns::rma/view/customer.phtml">
                     <arguments>
-                        <argument name="view_model" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
+                        <argument name="view_model" xsi:type="object">Tmo\SimpleReturns\Model\ViewModel\Rma\ViewView</argument>
                     </arguments>
                 </block>
             </block>

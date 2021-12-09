@@ -10,15 +10,15 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Block\Adminhtml\Rma\Status;
+namespace Tmo\SimpleReturns\Block\Adminhtml\Rma\Status;
 
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Model\Security\Token as Tokenizer,
     Model\SystemModel\Module\Config as ModuleConfig,
     Shared\ModuleComponentInterface
@@ -33,7 +33,7 @@ use Magento\Framework\Data\Form\FormKey;
 class Actions extends Container implements ModuleComponentInterface
 {
     /** @property string $_blockGroup */
-    protected $_blockGroup = 'AuroraExtensions_SimpleReturns';
+    protected $_blockGroup = 'Tmo_SimpleReturns';
 
     /** @property FormKey $formKey */
     protected $formKey;

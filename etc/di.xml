@@ -11,68 +11,68 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="AuroraExtensions\SimpleReturns\Api\AbstractRepositoryInterface"
-                type="AuroraExtensions\SimpleReturns\Model\RepositoryModel\AbstractRepository"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\SimpleReturnManagementInterface"
-                type="AuroraExtensions\SimpleReturns\Model\ManagementModel\SimpleReturnManagement"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\SimpleReturnRepositoryInterface"
-                type="AuroraExtensions\SimpleReturns\Model\RepositoryModel\SimpleReturnRepository"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnInterface"
-                type="AuroraExtensions\SimpleReturns\Model\DataModel\SimpleReturn"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnSearchResultsInterface"
+    <preference for="Tmo\SimpleReturns\Api\AbstractRepositoryInterface"
+                type="Tmo\SimpleReturns\Model\RepositoryModel\AbstractRepository"/>
+    <preference for="Tmo\SimpleReturns\Api\SimpleReturnManagementInterface"
+                type="Tmo\SimpleReturns\Model\ManagementModel\SimpleReturnManagement"/>
+    <preference for="Tmo\SimpleReturns\Api\SimpleReturnRepositoryInterface"
+                type="Tmo\SimpleReturns\Model\RepositoryModel\SimpleReturnRepository"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\SimpleReturnInterface"
+                type="Tmo\SimpleReturns\Model\DataModel\SimpleReturn"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\SimpleReturnSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\PackageManagementInterface"
-                type="AuroraExtensions\SimpleReturns\Model\ManagementModel\PackageManagement"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\PackageRepositoryInterface"
-                type="AuroraExtensions\SimpleReturns\Model\RepositoryModel\PackageRepository"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\PackageInterface"
-                type="AuroraExtensions\SimpleReturns\Model\DataModel\Package"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\PackageSearchResultsInterface"
+    <preference for="Tmo\SimpleReturns\Api\PackageManagementInterface"
+                type="Tmo\SimpleReturns\Model\ManagementModel\PackageManagement"/>
+    <preference for="Tmo\SimpleReturns\Api\PackageRepositoryInterface"
+                type="Tmo\SimpleReturns\Model\RepositoryModel\PackageRepository"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\PackageInterface"
+                type="Tmo\SimpleReturns\Model\DataModel\Package"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\PackageSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\LabelManagementInterface"
-                type="AuroraExtensions\SimpleReturns\Model\ManagementModel\LabelManagement"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\LabelRepositoryInterface"
-                type="AuroraExtensions\SimpleReturns\Model\RepositoryModel\LabelRepository"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\LabelInterface"
-                type="AuroraExtensions\SimpleReturns\Model\DataModel\Label"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\LabelSearchResultsInterface"
+    <preference for="Tmo\SimpleReturns\Api\LabelManagementInterface"
+                type="Tmo\SimpleReturns\Model\ManagementModel\LabelManagement"/>
+    <preference for="Tmo\SimpleReturns\Api\LabelRepositoryInterface"
+                type="Tmo\SimpleReturns\Model\RepositoryModel\LabelRepository"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\LabelInterface"
+                type="Tmo\SimpleReturns\Model\DataModel\Label"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\LabelSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\AttachmentManagementInterface"
-                type="AuroraExtensions\SimpleReturns\Model\ManagementModel\AttachmentManagement"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\AttachmentRepositoryInterface"
-                type="AuroraExtensions\SimpleReturns\Model\RepositoryModel\AttachmentRepository"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\AttachmentInterface"
-                type="AuroraExtensions\SimpleReturns\Model\DataModel\Attachment"/>
-    <preference for="AuroraExtensions\SimpleReturns\Api\Data\AttachmentSearchResultsInterface"
+    <preference for="Tmo\SimpleReturns\Api\AttachmentManagementInterface"
+                type="Tmo\SimpleReturns\Model\ManagementModel\AttachmentManagement"/>
+    <preference for="Tmo\SimpleReturns\Api\AttachmentRepositoryInterface"
+                type="Tmo\SimpleReturns\Model\RepositoryModel\AttachmentRepository"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\AttachmentInterface"
+                type="Tmo\SimpleReturns\Model\DataModel\Attachment"/>
+    <preference for="Tmo\SimpleReturns\Api\Data\AttachmentSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
-    <preference for="AuroraExtensions\SimpleReturns\Csi\System\Module\ConfigInterface"
-                type="AuroraExtensions\SimpleReturns\Model\SystemModel\Module\Config"/>
+    <preference for="Tmo\SimpleReturns\Csi\System\Module\ConfigInterface"
+                type="Tmo\SimpleReturns\Model\SystemModel\Module\Config"/>
 
-    <type name="AuroraExtensions\SimpleReturns\Model\RepositoryModel\SimpleReturnRepository">
+    <type name="Tmo\SimpleReturns\Model\RepositoryModel\SimpleReturnRepository">
         <arguments>
-            <argument name="collectionFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ResourceModel\SimpleReturn\CollectionFactory</argument>
-            <argument name="searchResultsFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnSearchResultsInterfaceFactory</argument>
+            <argument name="collectionFactory" xsi:type="object">Tmo\SimpleReturns\Model\ResourceModel\SimpleReturn\CollectionFactory</argument>
+            <argument name="searchResultsFactory" xsi:type="object">Tmo\SimpleReturns\Api\Data\SimpleReturnSearchResultsInterfaceFactory</argument>
         </arguments>
     </type>
-    <type name="AuroraExtensions\SimpleReturns\Model\RepositoryModel\PackageRepository">
+    <type name="Tmo\SimpleReturns\Model\RepositoryModel\PackageRepository">
         <arguments>
-            <argument name="collectionFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ResourceModel\Package\CollectionFactory</argument>
-            <argument name="searchResultsFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Api\Data\PackageSearchResultsInterfaceFactory</argument>
+            <argument name="collectionFactory" xsi:type="object">Tmo\SimpleReturns\Model\ResourceModel\Package\CollectionFactory</argument>
+            <argument name="searchResultsFactory" xsi:type="object">Tmo\SimpleReturns\Api\Data\PackageSearchResultsInterfaceFactory</argument>
         </arguments>
     </type>
-    <type name="AuroraExtensions\SimpleReturns\Model\RepositoryModel\LabelRepository">
+    <type name="Tmo\SimpleReturns\Model\RepositoryModel\LabelRepository">
         <arguments>
-            <argument name="collectionFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Model\ResourceModel\Label\CollectionFactory</argument>
-            <argument name="searchResultsFactory" xsi:type="object">AuroraExtensions\SimpleReturns\Api\Data\LabelSearchResultsInterfaceFactory</argument>
+            <argument name="collectionFactory" xsi:type="object">Tmo\SimpleReturns\Model\ResourceModel\Label\CollectionFactory</argument>
+            <argument name="searchResultsFactory" xsi:type="object">Tmo\SimpleReturns\Api\Data\LabelSearchResultsInterfaceFactory</argument>
         </arguments>
     </type>
-    <type name="AuroraExtensions\SimpleReturns\Model\SystemModel\Module\Config">
+    <type name="Tmo\SimpleReturns\Model\SystemModel\Module\Config">
         <arguments>
             <argument name="data" xsi:type="array">
                 <item name="carriers" xsi:type="array">
@@ -116,62 +116,62 @@
             </argument>
         </arguments>
     </type>
-    <virtualType name="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Rma\Statuses"
-                 type="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Generic">
+    <virtualType name="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Rma\Statuses"
+                 type="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Generic">
         <arguments>
             <argument name="key" xsi:type="string">statuses</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Rma\Reasons"
-                 type="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Generic">
+    <virtualType name="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Rma\Reasons"
+                 type="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Generic">
         <arguments>
             <argument name="key" xsi:type="string">reasons</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Rma\Resolutions"
-                 type="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Generic">
+    <virtualType name="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Rma\Resolutions"
+                 type="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Generic">
         <arguments>
             <argument name="key" xsi:type="string">resolutions</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Shipping\Carriers"
-                 type="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Generic">
+    <virtualType name="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Shipping\Carriers"
+                 type="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Generic">
         <arguments>
             <argument name="key" xsi:type="string">carriers</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Shipping\Methods"
-                 type="AuroraExtensions\SimpleReturns\Model\BackendModel\Source\Select\Grouped\Generic">
+    <virtualType name="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Shipping\Methods"
+                 type="Tmo\SimpleReturns\Model\BackendModel\Source\Select\Grouped\Generic">
         <arguments>
             <argument name="key" xsi:type="string">methods</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Control\Rma\SaveButton"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Control\SaveButton">
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Control\Rma\SaveButton"
+                 type="Tmo\SimpleReturns\Ui\Component\Control\SaveButton">
         <arguments>
             <argument name="components" xsi:type="array">
                 <item name="simpleReturnsAjaxSaveRedirect" xsi:type="array"></item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Control\Rma\CancelButton"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Control\CancelButton"></virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Control\Package\SaveButton"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Control\SaveButton">
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Control\Rma\CancelButton"
+                 type="Tmo\SimpleReturns\Ui\Component\Control\CancelButton"></virtualType>
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Control\Package\SaveButton"
+                 type="Tmo\SimpleReturns\Ui\Component\Control\SaveButton">
         <arguments>
             <argument name="components" xsi:type="array">
                 <item name="simpleReturnsAjaxSaveRedirect" xsi:type="array"></item>
             </argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Control\Package\CancelButton"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Control\CancelButton">
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Control\Package\CancelButton"
+                 type="Tmo\SimpleReturns\Ui\Component\Control\CancelButton">
         <arguments>
             <argument name="paramKey" xsi:type="string">pkg_id</argument>
             <argument name="entityType" xsi:type="string">package</argument>
         </arguments>
     </virtualType>
-    <type name="AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Rma\DataProvider">
+    <type name="Tmo\SimpleReturns\Ui\DataProvider\Grid\Rma\DataProvider">
         <arguments>
             <argument name="labels" xsi:type="array">
                 <item name="status" xsi:type="string">statuses</item>
@@ -180,7 +180,7 @@
             </argument>
         </arguments>
     </type>
-    <type name="AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Package\DataProvider">
+    <type name="Tmo\SimpleReturns\Ui\DataProvider\Grid\Package\DataProvider">
         <arguments>
             <argument name="labels" xsi:type="array">
                 <item name="carriers" xsi:type="array">
@@ -196,7 +196,7 @@
             </argument>
         </arguments>
     </type>
-    <type name="AuroraExtensions\SimpleReturns\Ui\DataProvider\Form\Rma\DataProvider">
+    <type name="Tmo\SimpleReturns\Ui\DataProvider\Form\Rma\DataProvider">
         <arguments>
             <argument name="labels" xsi:type="array">
                 <item name="status" xsi:type="string">statuses</item>
@@ -205,14 +205,14 @@
             </argument>
         </arguments>
     </type>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Rma\Actions"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Actions">
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Listing\Column\Rma\Actions"
+                 type="Tmo\SimpleReturns\Ui\Component\Listing\Column\Actions">
         <arguments>
             <argument name="paramKey" xsi:type="string">rma_id</argument>
         </arguments>
     </virtualType>
-    <virtualType name="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Package\Actions"
-                 type="AuroraExtensions\SimpleReturns\Ui\Component\Listing\Column\Actions">
+    <virtualType name="Tmo\SimpleReturns\Ui\Component\Listing\Column\Package\Actions"
+                 type="Tmo\SimpleReturns\Ui\Component\Listing\Column\Actions">
         <arguments>
             <argument name="paramKey" xsi:type="string">pkg_id</argument>
         </arguments>
@@ -221,10 +221,10 @@
     <type name="Magento\Catalog\Ui\DataProvider\Product\ProductDataProvider">
         <arguments>
             <argument name="addFieldStrategies" xsi:type="array">
-                <item name="simple_return" xsi:type="object">AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Product\AddSimpleReturnFieldToCollection</item>
+                <item name="simple_return" xsi:type="object">Tmo\SimpleReturns\Ui\DataProvider\Grid\Product\AddSimpleReturnFieldToCollection</item>
             </argument>
             <argument name="addFilterStrategies" xsi:type="array">
-                <item name="simple_return" xsi:type="object">AuroraExtensions\SimpleReturns\Ui\DataProvider\Grid\Product\AddSimpleReturnFilterToCollection</item>
+                <item name="simple_return" xsi:type="object">Tmo\SimpleReturns\Ui\DataProvider\Grid\Product\AddSimpleReturnFilterToCollection</item>
             </argument>
         </arguments>
     </type>

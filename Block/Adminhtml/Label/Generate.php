@@ -10,15 +10,15 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package       AuroraExtensions_SimpleReturns
+ * @package       Tmo_SimpleReturns
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       Aurora Extensions EULA
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Block\Adminhtml\Label;
+namespace Tmo\SimpleReturns\Block\Adminhtml\Label;
 
-use AuroraExtensions\SimpleReturns\{
+use Tmo\SimpleReturns\{
     Api\Data\PackageInterface,
     Api\PackageRepositoryInterface,
     Exception\ExceptionFactory,
@@ -37,7 +37,7 @@ use Magento\Framework\{
 class Generate extends Container implements ModuleComponentInterface
 {
     /** @property string $_blockGroup */
-    protected $_blockGroup = 'AuroraExtensions_SimpleReturns';
+    protected $_blockGroup = 'Tmo_SimpleReturns';
 
     /** @property ExceptionFactory $exceptionFactory */
     protected $exceptionFactory;

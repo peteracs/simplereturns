@@ -10,13 +10,13 @@
  * It is also available on the Internet at the following URL:
  * https://docs.auroraextensions.com/magento/extensions/2.x/simplereturns/LICENSE.txt
  *
- * @package        AuroraExtensions_SimpleReturns
+ * @package        Tmo_SimpleReturns
  * @copyright      Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license        MIT License
  */
 declare(strict_types=1);
 
-namespace AuroraExtensions\SimpleReturns\Api\Data;
+namespace Tmo\SimpleReturns\Api\Data;
 
 use Magento\Sales\Api\Data\OrderInterface;
 
@@ -29,7 +29,7 @@ interface SimpleReturnInterface
 
     /**
      * @param int $id
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnInterface
+     * @return \Tmo\SimpleReturns\Api\Data\SimpleReturnInterface
      */
     public function setId($id);
 
@@ -40,7 +40,7 @@ interface SimpleReturnInterface
 
     /**
      * @param string $createdAt
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnInterface
+     * @return \Tmo\SimpleReturns\Api\Data\SimpleReturnInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -51,7 +51,7 @@ interface SimpleReturnInterface
 
     /**
      * @param int|null $pkgId
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnInterface
+     * @return \Tmo\SimpleReturns\Api\Data\SimpleReturnInterface
      */
     public function setPackageId(?int $pkgId): SimpleReturnInterface;
 
@@ -62,7 +62,7 @@ interface SimpleReturnInterface
 
     /**
      * @param string $remoteIp
-     * @return \AuroraExtensions\SimpleReturns\Api\Data\SimpleReturnInterface
+     * @return \Tmo\SimpleReturns\Api\Data\SimpleReturnInterface
      */
     public function setRemoteIp(string $remoteIp): SimpleReturnInterface;
 }
